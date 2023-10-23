@@ -12,7 +12,7 @@ return {
       {
         "<leader>fg",
         function()
-          require("telescope.builtin").live_grep({ cwd = require("lazy.core.config").options.root })
+          require("telescope.builtin").live_grep()
         end,
         desc = "Find File Using Grep",
       },
