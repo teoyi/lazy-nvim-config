@@ -45,10 +45,16 @@ return {
   --   end,
   --   opts = { style = "minicyan" },
   -- },
+  -- {
+  --   "morhetz/gruvbox",
+  --   config = function()
+  --     vim.cmd.colorscheme("gruvbox")
+  --   end,
+  -- },
   {
-    "morhetz/gruvbox",
+    "NLKNguyen/papercolor-theme",
     config = function()
-      vim.cmd.colorscheme("gruvbox")
+      vim.cmd.colorscheme("PaperColor")
     end,
   },
 }
