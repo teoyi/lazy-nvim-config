@@ -91,22 +91,22 @@ return {
   --   end,
   --   opts = { style = "minicyan" },
   -- },
-  -- {
-  --   "morhetz/gruvbox",
-  --   config = function()
-  --     vim.cmd.colorscheme("gruvbox")
-  --   end,
-  -- },
+  {
+    "morhetz/gruvbox",
+    config = function()
+      vim.cmd.colorscheme("gruvbox")
+    end,
+  },
   -- {
   --   "NLKNguyen/papercolor-theme",
   --   config = function()
   --     vim.cmd.colorscheme("PaperColor")
   --   end,
   -- },
-  {
-    "rebelot/kanagawa.nvim",
-    config = function()
-      vim.cmd.colorscheme("kanagawa")
-    end,
-  },
+  -- {
+  --   "rebelot/kanagawa.nvim",
+  --   config = function()
+  --     vim.cmd.colorscheme("kanagawa")
+  --   end,
+  -- },
 }
