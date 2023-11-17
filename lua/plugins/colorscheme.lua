@@ -91,22 +91,38 @@ return {
   --   end,
   --   opts = { style = "minicyan" },
   -- },
-  {
-    "morhetz/gruvbox",
-    config = function()
-      vim.cmd.colorscheme("gruvbox")
-    end,
-  },
+  -- {
+  --   "morhetz/gruvbox",
+  --   config = function()
+  --     vim.cmd.colorscheme("gruvbox")
+  --   end,
+  -- },
   -- {
   --   "NLKNguyen/papercolor-theme",
   --   config = function()
   --     vim.cmd.colorscheme("PaperColor")
   --   end,
   -- },
+  {
+    "rebelot/kanagawa.nvim",
+    config = function()
+      require("kanagawa").setup({
+        transparent = true,
+      })
+      vim.cmd.colorscheme("kanagawa")
+    end,
+  },
   -- {
-  --   "rebelot/kanagawa.nvim",
+  --   "craftzdog/solarized-osaka.nvim",
+  --   lazy = true,
+  --   priority = 1000,
+  --   opts = function()
+  --     return {
+  --       transparent = true,
+  --     }
+  --   end,
   --   config = function()
-  --     vim.cmd.colorscheme("kanagawa")
+  --     vim.cmd.colorscheme("solarized-osaka")
   --   end,
   -- },
 }
