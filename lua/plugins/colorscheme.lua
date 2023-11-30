@@ -103,26 +103,26 @@ return {
   --     vim.cmd.colorscheme("PaperColor")
   --   end,
   -- },
-  {
-    "rebelot/kanagawa.nvim",
-    config = function()
-      require("kanagawa").setup({
-        transparent = true,
-      })
-      vim.cmd.colorscheme("kanagawa")
-    end,
-  },
   -- {
-  --   "craftzdog/solarized-osaka.nvim",
-  --   lazy = true,
-  --   priority = 1000,
-  --   opts = function()
-  --     return {
-  --       transparent = true,
-  --     }
-  --   end,
+  --   "rebelot/kanagawa.nvim",
   --   config = function()
-  --     vim.cmd.colorscheme("solarized-osaka")
+  --     require("kanagawa").setup({
+  --       transparent = true,
+  --     })
+  --     vim.cmd.colorscheme("kanagawa")
   --   end,
   -- },
+  {
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = function()
+      return {
+        transparent = true,
+      }
+    end,
+    config = function()
+      vim.cmd([[colorscheme solarized-osaka]])
+    end,
+  },
 }
