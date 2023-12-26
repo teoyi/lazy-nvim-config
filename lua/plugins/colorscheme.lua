@@ -92,52 +92,52 @@ return {
   --   end,
   --   opts = { style = "minicyan" },
   -- },
-  {
-    "echasnovski/mini.base16",
-    version = "*",
-    config = function()
-      require("mini.base16").setup({
-        plugins = { default = true },
-        palette = {
-          base00 = "#1c1c1c",
-          base01 = "#262626",
-          base02 = "#303030",
-          base03 = "#555555",
-          base04 = "#ababab",
-          base05 = "#d0d0d0",
-          base06 = "#e5e5e5",
-          base07 = "#ffffff",
-          base08 = "#d78787",
-          base09 = "#afaf87",
-          base0A = "#ffd7af",
-          base0B = "#87afaf",
-          base0C = "#afd7d7",
-          base0D = "#afafd7",
-          base0E = "#d7afd7",
-          base0F = "#afaf87",
-        },
-        use_cterm = {
-          base00 = 234,
-          base01 = 235,
-          base02 = 236,
-          base03 = 239,
-          base04 = 248,
-          base05 = 255,
-          base06 = 255,
-          base07 = 15,
-          base08 = 167,
-          base09 = 143,
-          base0A = 223,
-          base0B = 86,
-          base0C = 155,
-          base0D = 135,
-          base0E = 175,
-          base0F = 143,
-        },
-      })
-    end,
-    opts = { style = "minicyan" },
-  },
+  -- {
+  --   "echasnovski/mini.base16",
+  --   version = "*",
+  --   config = function()
+  --     require("mini.base16").setup({
+  --       plugins = { default = true },
+  --       palette = {
+  --         base00 = "#1c1c1c",
+  --         base01 = "#262626",
+  --         base02 = "#303030",
+  --         base03 = "#555555",
+  --         base04 = "#ababab",
+  --         base05 = "#d0d0d0",
+  --         base06 = "#e5e5e5",
+  --         base07 = "#ffffff",
+  --         base08 = "#d78787",
+  --         base09 = "#afaf87",
+  --         base0A = "#ffd7af",
+  --         base0B = "#87afaf",
+  --         base0C = "#afd7d7",
+  --         base0D = "#afafd7",
+  --         base0E = "#d7afd7",
+  --         base0F = "#afaf87",
+  --       },
+  --       use_cterm = {
+  --         base00 = 234,
+  --         base01 = 235,
+  --         base02 = 236,
+  --         base03 = 239,
+  --         base04 = 248,
+  --         base05 = 255,
+  --         base06 = 255,
+  --         base07 = 15,
+  --         base08 = 167,
+  --         base09 = 143,
+  --         base0A = 223,
+  --         base0B = 86,
+  --         base0C = 155,
+  --         base0D = 135,
+  --         base0E = 175,
+  --         base0F = 143,
+  --       },
+  --     })
+  --   end,
+  --   opts = { style = "minicyan" },
+  -- },
   -- {
   --   "morhetz/gruvbox",
   --   config = function()
@@ -159,17 +159,17 @@ return {
   --     vim.cmd.colorscheme("kanagawa")
   --   end,
   -- },
-  -- {
-  --   "craftzdog/solarized-osaka.nvim",
-  --   lazy = false,
-  --   priority = 1000,
-  --   opts = function()
-  --     return {
-  --       transparent = false,
-  --     }
-  --   end,
-  --   config = function()
-  --     vim.cmd([[colorscheme solarized-osaka]])
-  --   end,
-  -- },
+  {
+    "craftzdog/solarized-osaka.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = function()
+      return {
+        transparent = false,
+      }
+    end,
+    config = function()
+      vim.cmd([[colorscheme solarized-osaka]])
+    end,
+  },
 }
