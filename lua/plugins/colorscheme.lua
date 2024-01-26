@@ -46,7 +46,7 @@ return {
   --   opts = { style = "minicyan" },
   -- },
   -- {
-  --  -- Green
+  --   -- Green
   --   "echasnovski/mini.base16",
   --   version = "*",
   --   config = function()
