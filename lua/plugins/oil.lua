@@ -1,6 +1,5 @@
 return {
   "stevearc/oil.nvim",
-  event = "VimEnter",
   opts = {},
   config = function()
     require("oil").setup()

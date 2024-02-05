@@ -138,12 +138,13 @@ return {
   --   end,
   --   opts = { style = "minicyan" },
   -- },
-  -- {
-  --   "morhetz/gruvbox",
-  --   config = function()
-  --     vim.cmd.colorscheme("gruvbox")
-  --   end,
-  -- },
+  {
+    "morhetz/gruvbox",
+    config = function()
+      vim.g.gruvbox_contrast_dark = "hard"
+      vim.cmd.colorscheme("gruvbox")
+    end,
+  },
   -- {
   --   "NLKNguyen/papercolor-theme",
   --   config = function()
@@ -159,17 +160,17 @@ return {
   --     vim.cmd.colorscheme("kanagawa")
   --   end,
   -- },
-  {
-    "craftzdog/solarized-osaka.nvim",
-    lazy = false,
-    priority = 1000,
-    opts = function()
-      return {
-        transparent = false,
-      }
-    end,
-    config = function()
-      vim.cmd([[colorscheme solarized-osaka]])
-    end,
-  },
+  -- {
+  --   "craftzdog/solarized-osaka.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   opts = function()
+  --     return {
+  --       transparent = false,
+  --     }
+  --   end,
+  --   config = function()
+  --     vim.cmd([[colorscheme solarized-osaka]])
+  --   end,
+  -- },
 }
