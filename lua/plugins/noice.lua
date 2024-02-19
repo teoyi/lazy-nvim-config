@@ -1,6 +1,6 @@
 return {
   "folke/noice.nvim",
-  enabled = true,
+  enabled = false,
   opts = function(_, opts)
     table.insert(opts.routes, {
       filter = {
